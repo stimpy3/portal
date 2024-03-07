@@ -1,1 +1,1 @@
-let i=0;
+let input=document.querySelector(#search-input);
