@@ -1,5 +1,5 @@
-let input=document.querySelector(#search-button).value;
+let input=document.querySelector(#search-button);
 
 input.addEventListener("click"; ()=>{
-  let input=0;
+let result= document.getElementById('search-input').value;
 });
