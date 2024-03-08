@@ -1,0 +1,223 @@
+/*universal selector*/
+*{
+ padding:0;
+ margin:0;;
+}
+body{
+    background-image: url("back.png");
+    background-size: contain;
+     /*background-image: linear-gradient(#101010,#2b2b2b);*/
+     /*the first three lines are all needed to make the perfect background image*/
+    /*Make the gradient cover the entire body*/ 
+     height: 100%;
+     width: 95vw;
+     user-select: none; /*eliminates the annoying blue select text*/
+     overflow-x: hidden;
+ }
+ .header{
+    display: flex;
+    height: 13vh;
+    width: 100vw;
+    justify-content: center;
+    align-items:flex-end;
+ }
+
+ .header2{
+    display: flex;
+    align-items: center;
+    height: 11vh;
+    width: 97.6vw;
+    box-shadow: 3px 5px 5px 2px #00000046;
+    background-color:#414141;
+    border: 3px solid #414141;
+    border-radius: 15px;
+  }
+
+
+
+ /* Fixed Positioning:
+  When you set an element's position to fixed, it is positioned relative to the viewport.
+  It will stay in the same position even if you scroll the page.
+  
+Absolute Positioning:
+When you set an element's position to absolute, it is positioned relative to its nearest
+ positioned (not static) ancestor.
+  */
+.search-container {
+    position: absolute;
+    right:3%; 
+}
+/*
+flex-grow: It defines the ability for a flex item to grow
+ if necessary. A higher value will allow the item to grow
+more compared to other flex items within the same container.
+
+flex-shrink: It defines the ability for a flex item to shrink
+if necessary. A higher value will make the item shrink more 
+compared to other flex items when there is limited space.
+
+flex-basis: It defines the initial size of a flex item before
+it starts to grow or shrink. It can be set to a specific length
+(e.g., pixels or percentages) or one of the predefined values 
+like "auto.So, "flex: 20;" would be shorthand for setting the 
+
+"flex-grow" property to 20 and leaving "flex-shrink" and "flex-basis" 
+with their default values. This means that the item can grow significantly
+ compared to other items in the flex container.*/
+
+#searchinput {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px; /*topleft,topright,bottomright,bottomleft*/
+    width: 100px;
+    margin-left: 0; /*very imp to remove gap between search field and search bar\
+    as input by default makes margin*/
+}
+
+#searchbutton {
+    background-color: #ef9802;
+    color: white;
+    border: 1px solid #c9963f;
+    border-radius: 0 4px 4px 0;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#search-button:hover {
+    background-color: #ca7026;
+}
+
+.d{ 
+    display: flex;
+    flex-direction: column;
+    background-color: #1c1c1cd4;
+    border-radius: 25px;
+    box-shadow: 3px 10px 10px 5px #00000052;
+    padding: 7%;
+    overflow: hidden;
+    
+}
+
+.d:hover{ 
+    background-color: #f1f1f1;
+    transition: 0.6s;
+    border: 2.5px solid #ff7403;
+    overflow:auto; /*scroll bar shows up when overflow*/
+    /*if overflow: scroll; scroll bar always present doesn't need overflow to show up*/
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(52, 51, 51); 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #ffa703; 
+  }
+
+.d:hover .down-d{ 
+    color: #414141
+}
+
+.sub-d{
+    height:50%;
+    width: 100%;
+    background-image: linear-gradient(#b91d66,#c9682b);
+    border-radius: 25px;
+    margin-bottom:10%;
+}
+
+.down-d{
+ align-items: flex-end;
+ height:40%;
+ width: 100%;
+ color:white;
+ border-radius: 25px;
+}
+
+.text::before{
+ font-size: 1.8em;
+ font-weight: bolder;
+ font-family: "Roboto Condensed", sans-serif;
+}
+
+#road::before{
+content: "Road & Infra";
+}
+#education::before{
+content: "Education";
+}
+#job::before{
+    content: "Jobs";
+}
+#business::before{
+    content: "Business";
+}
+#healthcare::before{
+    content: "Healthcare";
+}
+#social::before{
+    content: "Social Welfare";
+}
+#legal::before{
+    content: "Legal & Judicial";
+}
+#agriculture::before{
+    content: "Agriculture, Rural Development";
+}
+#environment::before{
+    content:"Environment and Conservation:";
+}
+#emergency::before{
+    content:"Emergency services & mental health";
+}
+#it::before{
+    content:"Information Technology";
+}
+#foreign::before{
+    content:"Foreign Aid,Assistance:";
+}
+#tax::before{
+    content:"Finance and Taxation";
+}
+#house::before{
+    content:"Housing & Urban Development";
+}
+#consumer::before{
+    content:"Consumer Protection:";
+}
+
+
+.text{
+font-size: 0.9em;
+font-weight: bolder;
+font-family: "Roboto Condensed", sans-serif;
+}
+
+.bodycontainer{
+    width:100vw;
+}
+.division{
+    display: grid;
+    grid-template-rows: repeat(5,500px);
+    grid-template-columns: repeat(3,1fr);
+    grid-row-gap: 100px;
+    grid-column-gap: 90px;
+    padding: 100px;
+    width:contain;
+}
+
