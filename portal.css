@@ -4,7 +4,8 @@
  margin:0;;
 }
 body{
-    background-image: linear-gradient(to right,#250614,#230928);
+    /*background-image: linear-gradient(to right,#A770EF,#CF8BF3,#FDB99B);*/
+    background-image: linear-gradient(to right,#42275a,#734b6d);
     background-size: contain;
      /*background-image: linear-gradient(#101010,#2b2b2b);*/
      /*the first three lines are all needed to make the perfect background image*/
@@ -55,6 +56,8 @@ body{
   #head:hover{
     border: solid 2px #43434374;
     transition: 0.5s ease-out;
+    box-shadow: 0px 0px 8px 8px rgba(65, 65, 65, 0.342);
+    backdrop-filter: blur(5px);
   }
 
 
@@ -117,8 +120,9 @@ with their default values. This means that the item can grow significantly
     background-color: #202020;
     border-radius: 25px;
     box-shadow: 3px 10px 10px 5px #00000052;
-    padding: 7%;
-    overflow: hidden;
+    overflow-y: auto;
+    /* */
+    width:auto;
     
 }
 
@@ -160,17 +164,18 @@ with their default values. This means that the item can grow significantly
 .sub-d{
     height:50%;
     width: 100%;
-    background-image: linear-gradient(to right,#ba2262,#c8642e);
-    border-radius: 25px;
-    margin-bottom:10%;
+    background-image: linear-gradient(to right,#e96443,#904e95);
+    border-radius: 25px 25px 0px 0px;
 }
 
 .down-d{
  align-items: flex-end;
  height:40%;
- width: 100%;
+ 
+ overflow-x: none;
  color:white;
  border-radius: 25px;
+ padding: 7%;
 }
 
 .text::before{
@@ -231,6 +236,8 @@ font-size: 0.9em;
 font-weight: bolder;
 font-family: "Roboto Condensed", sans-serif;
 color: #ffff;
+width: 100%;
+word-wrap: break-word; 
 }
 
 .bodycontainer{
@@ -249,9 +256,19 @@ color: #ffff;
 
 
 .footer{
-    flex-direction: column;
     background-image: url("c2.png");
-    filter: brightness(30%);
+    
     width: 100%;
     height: 10%;
+    display: flex;
+    justify-content: center;
+    padding-top: 2%;
+    border-top:3px solid #575757;
+}
+
+#foottxt{
+    width: fit-content;
+    height: fit-content;
+    color: white;
+    font-size: 1.7em;
 }
