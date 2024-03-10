@@ -4,7 +4,7 @@
  margin:0;;
 }
 body{
-    background-image: linear-gradient(to right,#b35857,#8a79b7,#2b527d);
+    background-image: linear-gradient(to right,#d85654,#876dd0,#2d75c1);
     background-size: contain;
      /*background-image: linear-gradient(#101010,#2b2b2b);*/
      /*the first three lines are all needed to make the perfect background image*/
@@ -163,7 +163,7 @@ with their default values. This means that the item can grow significantly
 .sub-d{
     height:50%;
     width: 100%;
-    background-image: linear-gradient(to right,#ea7a42,#a56fa9);
+    background-image: linear-gradient(to right,#ef6d2c,#d172d7);
     border-radius: 25px 25px 0px 0px;
 }
 
