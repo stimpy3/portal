@@ -4,7 +4,7 @@
  margin:0;;
 }
 body{
-    background-image: linear-gradient(to right,#d85654,#876dd0,#2d75c1);
+    background-color: #fdfefe;
     background-size: contain;
      /*background-image: linear-gradient(#101010,#2b2b2b);*/
      /*the first three lines are all needed to make the perfect background image*/
@@ -16,6 +16,7 @@ body{
      font-family: "Roboto Condensed", sans-serif;
      display: flex;
  }
+
  .header{
     display: flex;
     height: 13vh;
@@ -147,13 +148,13 @@ with their default values. This means that the item can grow significantly
    
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: rgb(52, 51, 51); 
+    background: #94a3b0; 
     border-radius: 10px;
   }
   
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    background: #411b3b; 
+    background: #6b757e; 
   }
 
 .d:hover .down-d{ 
@@ -161,10 +162,15 @@ with their default values. This means that the item can grow significantly
 }
 
 .sub-d{
+    display: flex;
     height:50%;
     width: 100%;
     background-image: linear-gradient(to right,#ef6d2c,#d172d7);
     border-radius: 25px 25px 0px 0px;
+    justify-content: center;
+    align-items: center;
+    font-size: 4em;
+    color: white;
 }
 
 .down-d{
@@ -245,15 +251,16 @@ word-wrap: break-word;
 }
 .division{
     display: grid;
+    background-color: rgba(239,242,248,255);
     grid-template-rows: repeat(5,500px);
     grid-template-columns: repeat(3,1fr);
     grid-row-gap: 100px;
     grid-column-gap: 90px;
-    border: 5px dotted #f5f5f5;
+    border: 5px solid #c1d1de;
     border-radius: 25px;
     padding: 3%;
     margin: 3% 5%;
-    
+    height: contain;
     width:contain;
 }
 
@@ -275,5 +282,4 @@ word-wrap: break-word;
     color: white;
     font-size: 1.7em;
 }
-
 
