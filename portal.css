@@ -4,9 +4,8 @@
  margin:0;;
 }
 body{
-    background-color: #fdfefe;
+    background-image: linear-gradient(to right,#8B9ECE,#CC95C0,#DBD4B4);
     background-size: contain;
-     /*background-image: linear-gradient(#101010,#2b2b2b);*/
      /*the first three lines are all needed to make the perfect background image*/
     /*Make the gradient cover the entire body*/ 
      height: 100%;
@@ -117,9 +116,9 @@ with their default values. This means that the item can grow significantly
 .d{ 
     display: flex;
     flex-direction: column;
-    background-color: #202020;
+    background-color: #111111;
     border-radius: 25px;
-    box-shadow: 3px 10px 10px 5px #00000052;
+    box-shadow: 3px 10px 10px 5px #0000007d;
     overflow-y: auto;
     /* */
     width:auto;
@@ -127,9 +126,10 @@ with their default values. This means that the item can grow significantly
 }
 
 .d:hover{ 
-    background-color: #13131f;
+    background-color: #000000;
     transition: 0.6s;
-    border: 2.5px solid #848484;
+    border: 4px solid #ffffff;
+    box-shadow: 3px 20px 20px 8px rgba(0, 0, 0, 0.267);
     overflow:auto; /*scroll bar shows up when overflow*/
     /*if overflow: scroll; scroll bar always present doesn't need overflow to show up*/
 }
@@ -251,12 +251,13 @@ word-wrap: break-word;
 }
 .division{
     display: grid;
-    background-color: rgba(239,242,248,255);
+    background-color: #363232;
     grid-template-rows: repeat(5,500px);
     grid-template-columns: repeat(3,1fr);
     grid-row-gap: 100px;
     grid-column-gap: 90px;
-    border: 5px solid #c1d1de;
+   
+    box-shadow: inset 3px 5px 5px 2px #00000046;
     border-radius: 25px;
     padding: 3%;
     margin: 3% 5%;
