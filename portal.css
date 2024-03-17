@@ -29,7 +29,7 @@ body{
     display: flex;
     align-items: center;
     height: 14vh;
-    width: 90vw;
+    width: 88vw;
     box-shadow: 3px 5px 5px 2px #00000046;
     background-color: #13131f;
     border: 3px solid #6e6e6e6f;
@@ -141,20 +141,20 @@ with their default values. This means that the item can grow significantly
   
   /* Track */
   ::-webkit-scrollbar-track {
-    box-shadow: 0 0 5px #2b0b34; 
+    box-shadow: 0 0 5px #353535; 
     border-radius: 10px;
 
   }
    
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: #94a3b0; 
+    background: #535353; 
     border-radius: 10px;
   }
   
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    background: #6b757e; 
+    background: #2d2d2d; 
   }
 
 .d:hover .down-d{ 
@@ -249,6 +249,19 @@ word-wrap: break-word;
     width:100vw;
     padding-bottom: 20%;
 }
+
+.filters{
+    height: 20vh;
+    box-shadow: inset 3px 5px 5px 2px #00000046;
+    border-radius: 25px;
+    background-color: #363232;
+    padding: 3%;
+    margin: 3% 5%;
+    display: flex;
+    color: white;
+    font-size: 1.5em;
+    align-items: center;
+}
 .division{
     display: grid;
     background-color: #363232;
@@ -256,13 +269,10 @@ word-wrap: break-word;
     grid-template-columns: repeat(3,1fr);
     grid-row-gap: 100px;
     grid-column-gap: 90px;
-   
     box-shadow: inset 3px 5px 5px 2px #00000046;
     border-radius: 25px;
     padding: 3%;
     margin: 3% 5%;
-    height: contain;
-    width:contain;
 }
 
 
@@ -284,3 +294,10 @@ word-wrap: break-word;
     font-size: 1.7em;
 }
 
+.box{
+    height: 70%;
+    margin-right: 10%;
+}
+.lbl{
+    display: block;
+}
