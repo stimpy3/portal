@@ -318,7 +318,7 @@ word-wrap: break-word;
 }
 
 
-@media only screen and (max-width: 400px) {
+@media (any-pointer: coarse) {
     body {
       background-image: none;
     }
