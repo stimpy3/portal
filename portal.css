@@ -305,3 +305,71 @@ word-wrap: break-word;
 .lbl{
     display: block;
 }
+
+@media only screen and (max-width: 400px) {
+    body {
+      background-image: none;
+    }
+
+    #head{
+        font-size: 1em;
+        border-radius: 15px;
+        padding: 8px;
+        margin-left: 1%;
+        background-color: #63636300;
+        border: solid transparent ;
+        color: white;
+      }
+
+      #searchinput {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px 0 0 5px; /*topleft,topright,bottomright,bottomleft*/
+        width: 75px;
+        margin-left: 0; /*very imp to remove gap between search field and search bar\
+        as input by default makes margin*/
+    }
+
+    .filters{
+        font-size: 10px;
+        
+    }
+
+
+    #resetBtn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width:50px;
+        height:20px;
+        font-size: 10px;
+
+    }
+    
+.lbl {
+    width: 52px;
+}
+
+    
+
+    .division {
+        display: flex;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .d {
+        flex: 0 0 auto;
+        width: 80%; /* Adjust as needed */
+        margin: 10px; /* Adjust as needed */
+    
+    }
+
+
+
+.d{
+    width: 270px;
+}
+
+
+}
