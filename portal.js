@@ -143,4 +143,36 @@ search_button.addEventListener("click", () => {
                section.style.display = 'none';
            }
        });
-   }
+    }
+
+   //site click redirects
+   document.getElementById('shivaji12').addEventListener('click', function() {
+    window.location.href = 'https://mahadbt.maharashtra.gov.in/SchemeData/SchemeData?str=E9DDFA703C38E51A3160277BCF2AA7C6';
+    });
+
+    document.getElementById('sbc12').addEventListener('click', function() {
+        window.location.href = 'https://mahadbt.maharashtra.gov.in/SchemeData/SchemeData?str=E9DDFA703C38E51A2406A5294F822FAC';
+    });
+
+    document.getElementById('senior12').addEventListener('click', function() {
+        window.location.href = 'https://mahadbt.maharashtra.gov.in/SchemeData/SchemeData?str=E9DDFA703C38E51A581B0F1DB8A46333#:~:text=Maharashtrian%20Students%20studying%20Out%20of%20Maharashtra%20can%20apply%20for%20this%20scheme.&text=The%20students%20after%2012th%20are,DHE%20sanctioned%20letter.';
+    });
+
+    document.getElementById('Economically12').addEventListener('click', function() {
+        window.location.href = 'https://mahadbt.maharashtra.gov.in/SchemeData/SchemeData?str=E9DDFA703C38E51AB6EDCD4985FE7C3A';
+    });
+
+    document.getElementById('postmatric12').addEventListener('click', function() {
+        window.location.href = 'https://mahadbt.maharashtra.gov.in/SchemeData/SchemeData?str=E9DDFA703C38E51AA07C7E01997E4885';
+    });
+
+    document.getElementById('shivajishulkh12').addEventListener('click', function() {
+        window.location.href = 'https://mahadbt.maharashtra.gov.in/SchemeData/SchemeData?str=E9DDFA703C38E51AA54D7A32E4C3B30A';
+    });
+
+    document.getElementById('junior12').addEventListener('click', function() {
+        window.location.href = 'https://mahadbt.maharashtra.gov.in/SchemeData/SchemeData?str=E9DDFA703C38E51A581B0F1DB8A46333#:~:text=Maharashtrian%20Students%20studying%20Out%20of%20Maharashtra%20can%20apply%20for%20this%20scheme.&text=The%20students%20after%2012th%20are,DHE%20sanctioned%20letter.';
+    });
+
+
+   
