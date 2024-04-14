@@ -147,5 +147,4 @@ body_js=document.querySelector("body");
     document.getElementById('openmerit11').addEventListener('click', function() {
         window.location.href = 'https://mahadbt.maharashtra.gov.in/SchemeData/SchemeData?str=E9DDFA703C38E51AAC90D4A992C45BAB';
     });
-
   
