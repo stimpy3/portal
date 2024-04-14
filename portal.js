@@ -6,54 +6,9 @@ in event listener instead*/
 div=document.querySelector(".d");
 search_button=document.querySelector("#searchbutton");
 body_js=document.querySelector("body");
-transport=document.querySelector("#TransportInfrastrucutre");
-education=document.querySelector("#Education");
-job=document.querySelector("#EmploymentJob");
-business=document.querySelector("#BusinessEconomy");
-healtcare=document.querySelector("#Healthcare");
-social=document.querySelector("#SocialWelfare");
-legal=document.querySelector("#LegalJudicial");
-agriculture=document.querySelector("#AgricultureRural");
-environment=document.querySelector("#Environment");
-emergency=document.querySelector("#Emergency");
-it=document.querySelector("#IT");
-foreign=document.querySelector("#ForeignAid");
-tax_finance=document.querySelector("#TaxFinance");
-house_urban=document.querySelector("#HousingUrbanDev");
-consumer=document.querySelector("#ConsumerProtection");
-
-search_button.addEventListener("click", () => {
-    const search_txt = document.getElementById("searchinput").value.toLowerCase();
-  
-    const allDivs = document.querySelectorAll(".d");
-    let anyMatchFound = false; // Flag to track if any matches are found
-  
-    allDivs.forEach((div) => {
-      // Check for matching content within the div or its ID
-      if (
-        div.textContent.toLowerCase().includes(search_txt) ||
-        div.id.toLowerCase().includes(search_txt)
-      ) {
-        div.style.display = "block";
-        anyMatchFound = true; // Set flag if a match is found
-      } else {
-        // Hide only if a search term is entered (optional)
-        if (search_txt) {
-          div.style.display = "none";
-        }
-      }
-    });
-  
-    // Display alert if no matches are found (optional)
-    if (!anyMatchFound && search_txt) {
-      alert("No results found for your search.");
-    }
-  });
 
 
-
-
- // Get the reset button element
+   // Get the reset button element
    var resetBtn = document.getElementById('resetBtn');
 
    // Add an event listener to the reset button
@@ -156,8 +111,6 @@ search_button.addEventListener("click", () => {
 
    
 
-
-   
    //site click redirects
    document.getElementById('shivaji12').addEventListener('click', function() {
     window.location.href = 'https://mahadbt.maharashtra.gov.in/SchemeData/SchemeData?str=E9DDFA703C38E51A3160277BCF2AA7C6';
@@ -187,7 +140,7 @@ search_button.addEventListener("click", () => {
         window.location.href = 'https://mahadbt.maharashtra.gov.in/SchemeData/SchemeData?str=E9DDFA703C38E51A581B0F1DB8A46333#:~:text=Maharashtrian%20Students%20studying%20Out%20of%20Maharashtra%20can%20apply%20for%20this%20scheme.&text=The%20students%20after%2012th%20are,DHE%20sanctioned%20letter.';
     });
 
-   document.getElementById('Vidyaniketan11').addEventListener('click', function() {
+    document.getElementById('Vidyaniketan11').addEventListener('click', function() {
         window.location.href = 'https://mahadbt.maharashtra.gov.in/SchemeData/SchemeData?str=E9DDFA703C38E51AEC62CC61F6C26609';
     });
 
@@ -196,6 +149,3 @@ search_button.addEventListener("click", () => {
     });
 
   
-
-
-   
