@@ -187,5 +187,15 @@ search_button.addEventListener("click", () => {
         window.location.href = 'https://mahadbt.maharashtra.gov.in/SchemeData/SchemeData?str=E9DDFA703C38E51A581B0F1DB8A46333#:~:text=Maharashtrian%20Students%20studying%20Out%20of%20Maharashtra%20can%20apply%20for%20this%20scheme.&text=The%20students%20after%2012th%20are,DHE%20sanctioned%20letter.';
     });
 
+   document.getElementById('Vidyaniketan11').addEventListener('click', function() {
+        window.location.href = 'https://mahadbt.maharashtra.gov.in/SchemeData/SchemeData?str=E9DDFA703C38E51AEC62CC61F6C26609';
+    });
+
+    document.getElementById('openmerit11').addEventListener('click', function() {
+        window.location.href = 'https://mahadbt.maharashtra.gov.in/SchemeData/SchemeData?str=E9DDFA703C38E51AAC90D4A992C45BAB';
+    });
+
+  
+
 
    
