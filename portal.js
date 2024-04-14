@@ -58,41 +58,70 @@ body_js=document.querySelector("body");
            var selectedGender = gender ? gender.value : null;
            var selectedc = c ? c.value : null;
 
-           // Define the divs to display based on gender and age
-           var divsToShow = [];
-
+         
+    // Define the divs to display based on gender and age
+           var divsToShow = []; var divsToShowmg = ['shivaji12','sbc12','senior12','Economically12','postmatric12','shivajishulkh12','junior12','Vidyaniketan11','openmerit11'];
+           var divsToShow10 = [];
+           var divsToShow11 = ['postmatric12','sbc12','Vidyaniketan11','openmerit11'];
+           var divsToShow12 = ['shivaji12','sbc12','senior12','Economically12','postmatric12','shivajishulkh12','junior12'];
+           
            // Show only the appropriate divs based on gender
-           if (selectedGender === 'male') {
-               divsToShow = ['shivaji12','sbc12','senior12','Economically12','postmatric12','shivajishulkh12','junior12','Vidyaniketan11','openmerit11'];
-           } else if (selectedGender === 'female') {
-               divsToShow = ['shivaji12','sbc12','senior12','Economically12','postmatric12','shivajishulkh12','junior12','Vidyaniketan11','openmerit11'];
-           } else if (selectedGender === null) {
+           if (selectedc==null) {
+
+               if(selectedGender === 'male'){
+                divsToShow = divsToShowmg;
+              }
+
+              else if (selectedGender === 'female') {
+                divsToShow = divsToShowmg;
+              }
+
+            } 
+
+           else if (selectedGender === null) {
                // If no gender selected, show all sections related to age
-               if (selectedc === '10') {
-                   divsToShow = [];
-               } else if (selectedc === '11') {
-                   divsToShow = ['postmatric12','sbc12','Vidyaniketan11','openmerit11'];
-               }
-               else if (selectedc === '12') {
-                divsToShow = ['shivaji12','sbc12','senior12','Economically12','postmatric12','shivajishulkh12','junior12'];
-            }
-           } else if (selectedc === null) {
-               // If no age selected, show all sections related to gender
-               if (selectedGender === 'male') {
-                divsToShow = ['shivaji12','sbc12','senior12','Economically12','postmatric12','shivajishulkh12','junior12','Vidyaniketan11','openmerit11'];
-               } else if (selectedGender === 'female') {
-                divsToShow = ['shivaji12','sbc12','senior12','Economically12','postmatric12','shivajishulkh12','junior12','Vidyaniketan11','openmerit11'];
-               }
-           } else {
-               // If both gender and age selected, show the intersection
-               if (selectedc === '10') {
-                   divsToShow = [];
-               } else if (selectedAge === '11') {
-                divsToShow = ['postmatric12','sbc12','Vidyaniketan11','openmerit11'];
-               }else if (selectedAge === '12') {
-                divsToShow = ['shivaji12','sbc12','senior12','Economically12','postmatric12','shivajishulkh12','junior12'];
-            }
-           }
+                 if (selectedc === '10') {
+                     divsToShow = [];
+                   } 
+                 else if (selectedc === '11') {
+                     divsToShow =divsToShow11;
+                   }
+
+                  else if (selectedc === '12') {
+                      divsToShow =divsToShow12;
+                   }
+               } 
+
+               else {
+                // If both gender and age selected, show the intersection
+                  if (selectedc === '10' && selectedGender=='male') {
+                    divsToShow = divsToShow10.filter(element => divsToShowmg.includes(element));
+                    }
+                  else if (selectedc === '10' && selectedGender=='female') {
+                    divsToShow = divsToShow10.filter(element => divsToShowmg.includes(element));
+                   } 
+ 
+ 
+                  else if (selectedc === '11' && selectedGender=='male') {
+                    divsToShow = divsToShow11.filter(element => divsToShowmg.includes(element));
+                    }
+                    
+                  else if (selectedc === '11' && selectedGender=='female') {
+                    divsToShow = divsToShow11.filter(element => divsToShowmg.includes(element));
+                   }
+ 
+ 
+                  else if (selectedc === '12' && selectedGender=='male') {
+                    divsToShow = divsToShow12.filter(element => divsToShowmg.includes(element));
+                    }
+                  else if (selectedc === '12' && selectedGender=='female') {
+                    divsToShow = divsToShow12.filter(element => divsToShowmg.includes(element));
+                   }
+ 
+                }
+
+           
+           
 
            // Hide divs that are not in the list of divs to show
            hideNonSelectedDivs(divsToShow);
