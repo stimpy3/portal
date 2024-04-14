@@ -70,10 +70,7 @@ Absolute Positioning:
 When you set an element's position to absolute, it is positioned relative to its nearest
  positioned (not static) ancestor.
   */
-.search-container {
-    position: absolute;
-    right:6%; 
-}
+
 /*
 flex-grow: It defines the ability for a flex item to grow
  if necessary. A higher value will allow the item to grow
@@ -91,28 +88,6 @@ like "auto.So, "flex: 20;" would be shorthand for setting the
 "flex-grow" property to 20 and leaving "flex-shrink" and "flex-basis" 
 with their default values. This means that the item can grow significantly
  compared to other items in the flex container.*/
-
-#searchinput {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px 0 0 5px; /*topleft,topright,bottomright,bottomleft*/
-    width: 100px;
-    margin-left: 0; /*very imp to remove gap between search field and search bar\
-    as input by default makes margin*/
-}
-
-#searchbutton {
-    background-color: #ef9802;
-    color: white;
-    border: 1px solid #c9963f;
-    border-radius: 0 4px 4px 0;
-    padding: 10px;
-    cursor: pointer;
-}
-
-#search-button:hover {
-    background-color: #ca7026;
-}
 
 .d{ 
     display: flex;
