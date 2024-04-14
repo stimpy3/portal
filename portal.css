@@ -211,30 +211,17 @@ content: "Tuition & Examination Fees to SBC Students";
 #junior::before{
     content: "Assistance to Meritorious Students scholarship-Junior Level";
 }
-#agriculture::before{
-    content: "Agriculture, Rural Development";
+#Tution::before{
+    content: "Tuition & Examination Fees to SBC Students";
 }
-#environment::before{
-    content:"Environment and Conservation:";
+
+#vidyaniketan::before{
+    content:"Government Vidyaniketan Scholarship";
 }
-#emergency::before{
-    content:"Emergency services & mental health";
+#openmerit::before{
+    content:"Open Merit Scholarships in Junior College";
 }
-#it::before{
-    content:"Information Technology";
-}
-#foreign::before{
-    content:"Foreign Aid,Assistance:";
-}
-#tax::before{
-    content:"Finance and Taxation";
-}
-#house::before{
-    content:"Housing & Urban Development";
-}
-#consumer::before{
-    content:"Consumer Protection:";
-}
+
 
 
 .text{
@@ -253,7 +240,7 @@ word-wrap: break-word;
 
 .filters{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     height: 100px;
     max-height: 120px;
     box-shadow: inset 3px 5px 5px 2px #00000046;
@@ -312,7 +299,9 @@ word-wrap: break-word;
     background-color: #ef9802;
     border-radius: 25px;
     border: none;
+    width:10%;
     padding:15px;
+    font-size: 1.5em;
 }
 
 #resetBtn:hover{
@@ -320,7 +309,7 @@ word-wrap: break-word;
 }
 
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 400px) {
     body {
       background-image: none;
     }
@@ -387,5 +376,6 @@ word-wrap: break-word;
     }
 
 }
+
 
 
