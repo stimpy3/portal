@@ -50,7 +50,10 @@ search_button.addEventListener("click", () => {
     }
   });
 
-   // Get the reset button element
+
+
+
+ // Get the reset button element
    var resetBtn = document.getElementById('resetBtn');
 
    // Add an event listener to the reset button
@@ -70,13 +73,13 @@ search_button.addEventListener("click", () => {
 
    // Add event listeners for gender and age radio buttons
    var genderRadios = document.querySelectorAll('input[name="gender"]');
-   var ageRadios = document.querySelectorAll('input[name="age"]');
+   var cRadios = document.querySelectorAll('input[name="c"]');
 
    genderRadios.forEach(function(radio) {
        radio.addEventListener('change', filterSections);
    });
 
-   ageRadios.forEach(function(radio) {
+   cRadios.forEach(function(radio) {
        radio.addEventListener('change', filterSections);
    });
 
@@ -92,42 +95,48 @@ search_button.addEventListener("click", () => {
    function filterSections() {
        resetSections();
 
+       var c = document.querySelector('input[name="c"]:checked');
        var gender = document.querySelector('input[name="gender"]:checked');
-       var age = document.querySelector('input[name="age"]:checked');
+       
 
-       if (gender || age) {
+       if (gender || c) {
            var selectedGender = gender ? gender.value : null;
-           var selectedAge = age ? age.value : null;
+           var selectedc = c ? c.value : null;
 
            // Define the divs to display based on gender and age
            var divsToShow = [];
 
            // Show only the appropriate divs based on gender
            if (selectedGender === 'male') {
-               divsToShow = ['Education', 'EmploymentJob', 'BusinessEconomy', 'TransportInfrastrucutre'];
+               divsToShow = ['shivaji12','sbc12','senior12','Economically12','postmatric12','shivajishulkh12','junior12','Vidyaniketan11','openmerit11'];
            } else if (selectedGender === 'female') {
-               divsToShow = ['AgricultureRural', 'HousingUrbanDev', 'SocialWelfare', 'Healthcare'];
+               divsToShow = ['shivaji12','sbc12','senior12','Economically12','postmatric12','shivajishulkh12','junior12','Vidyaniketan11','openmerit11'];
            } else if (selectedGender === null) {
                // If no gender selected, show all sections related to age
-               if (selectedAge === '12-15') {
-                   divsToShow = ['IT', 'BusinessEconomy', 'TransportInfrastrucutre'];
-               } else if (selectedAge === '15-18') {
-                   divsToShow = ['EmploymentJob', 'LegalJudicial', 'Education'];
+               if (selectedc === '10') {
+                   divsToShow = [];
+               } else if (selectedc === '11') {
+                   divsToShow = ['postmatric12','sbc12','Vidyaniketan11','openmerit11'];
                }
-           } else if (selectedAge === null) {
+               else if (selectedc === '12') {
+                divsToShow = ['shivaji12','sbc12','senior12','Economically12','postmatric12','shivajishulkh12','junior12'];
+            }
+           } else if (selectedc === null) {
                // If no age selected, show all sections related to gender
                if (selectedGender === 'male') {
-                   divsToShow = ['Education', 'EmploymentJob', 'BusinessEconomy', 'TransportInfrastrucutre'];
+                divsToShow = ['shivaji12','sbc12','senior12','Economically12','postmatric12','shivajishulkh12','junior12','Vidyaniketan11','openmerit11'];
                } else if (selectedGender === 'female') {
-                   divsToShow = ['AgricultureRural', 'HousingUrbanDev', 'SocialWelfare', 'Healthcare'];
+                divsToShow = ['shivaji12','sbc12','senior12','Economically12','postmatric12','shivajishulkh12','junior12','Vidyaniketan11','openmerit11'];
                }
            } else {
                // If both gender and age selected, show the intersection
-               if (selectedAge === '12-15') {
-                   divsToShow = ['IT', 'BusinessEconomy', 'TransportInfrastrucutre'];
-               } else if (selectedAge === '15-18') {
-                   divsToShow = ['EmploymentJob', 'LegalJudicial', 'Education'];
-               }
+               if (selectedc === '10') {
+                   divsToShow = [];
+               } else if (selectedAge === '11') {
+                divsToShow = ['postmatric12','sbc12','Vidyaniketan11','openmerit11'];
+               }else if (selectedAge === '12') {
+                divsToShow = ['shivaji12','sbc12','senior12','Economically12','postmatric12','shivajishulkh12','junior12'];
+            }
            }
 
            // Hide divs that are not in the list of divs to show
@@ -145,6 +154,10 @@ search_button.addEventListener("click", () => {
        });
     }
 
+   
+
+
+   
    //site click redirects
    document.getElementById('shivaji12').addEventListener('click', function() {
     window.location.href = 'https://mahadbt.maharashtra.gov.in/SchemeData/SchemeData?str=E9DDFA703C38E51A3160277BCF2AA7C6';
