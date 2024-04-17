@@ -58,12 +58,16 @@ body_js=document.querySelector("body");
            var selectedGender = gender ? gender.value : null;
            var selectedc = c ? c.value : null;
 
-         
-    // Define the divs to display based on gender and age
-           var divsToShow = []; var divsToShowmg = ['shivaji12','sbc12','senior12','Economically12','postmatric12','shivajishulkh12','junior12','Vidyaniketan11','openmerit11'];
-           var divsToShow10 = [];
-           var divsToShow11 = ['postmatric12','sbc12','Vidyaniketan11','openmerit11'];
-           var divsToShow12 = ['shivaji12','sbc12','senior12','Economically12','postmatric12','shivajishulkh12','junior12'];
+           
+           
+           
+           
+           // Define the divs to display based on gender and age
+           var divsToShow = []; 
+           var divsToShowmg = ['shivaji12','sbc121','senior12','Economically12','postmatric12','shivajishulkh12','junior12','Vidyaniketan11','openmerit11','service121','vocational121','phymat121','government910','prematric10','maharshi10'];
+           var divsToShow10 = ['government910','prematric10','maharshi10'];
+           var divsToShow11 = ['phymat121','vocational121','service121','postmatric12','sbc121','Vidyaniketan11','openmerit11'];
+           var divsToShow12 = ['phymat121','vocational121','service121','shivaji12','sbc121','senior12','Economically12','postmatric12','shivajishulkh12','junior12'];
            
            // Show only the appropriate divs based on gender
            if (selectedc==null) {
@@ -81,7 +85,7 @@ body_js=document.querySelector("body");
            else if (selectedGender === null) {
                // If no gender selected, show all sections related to age
                  if (selectedc === '10') {
-                     divsToShow = [];
+                     divsToShow =divsToShow10;
                    } 
                  else if (selectedc === '11') {
                      divsToShow =divsToShow11;
@@ -94,15 +98,7 @@ body_js=document.querySelector("body");
 
                else {
                 // If both gender and age selected, show the intersection
-                  if (selectedc === '10' && selectedGender=='male') {
-                    divsToShow = divsToShow10.filter(element => divsToShowmg.includes(element));
-                    }
-                  else if (selectedc === '10' && selectedGender=='female') {
-                    divsToShow = divsToShow10.filter(element => divsToShowmg.includes(element));
-                   } 
- 
- 
-                  else if (selectedc === '11' && selectedGender=='male') {
+                  if (selectedc === '11' && selectedGender=='male') {
                     divsToShow = divsToShow11.filter(element => divsToShowmg.includes(element));
                     }
                     
@@ -110,6 +106,15 @@ body_js=document.querySelector("body");
                     divsToShow = divsToShow11.filter(element => divsToShowmg.includes(element));
                    }
  
+
+                   else if (selectedc === '10' && selectedGender=='male') {
+                    divsToShow = divsToShow10.filter(element => divsToShowmg.includes(element));
+                    }
+                    
+                  else if (selectedc === '10' && selectedGender=='female') {
+                    divsToShow = divsToShow10.filter(element => divsToShowmg.includes(element));
+                   }
+
  
                   else if (selectedc === '12' && selectedGender=='male') {
                     divsToShow = divsToShow12.filter(element => divsToShowmg.includes(element));
@@ -145,7 +150,7 @@ body_js=document.querySelector("body");
     window.location.href = 'https://mahadbt.maharashtra.gov.in/SchemeData/SchemeData?str=E9DDFA703C38E51A3160277BCF2AA7C6';
     });
 
-    document.getElementById('sbc12').addEventListener('click', function() {
+    document.getElementById('sbc121').addEventListener('click', function() {
         window.location.href = 'https://mahadbt.maharashtra.gov.in/SchemeData/SchemeData?str=E9DDFA703C38E51A2406A5294F822FAC';
     });
 
@@ -176,4 +181,33 @@ body_js=document.querySelector("body");
     document.getElementById('openmerit11').addEventListener('click', function() {
         window.location.href = 'https://mahadbt.maharashtra.gov.in/SchemeData/SchemeData?str=E9DDFA703C38E51AAC90D4A992C45BAB';
     });
-  
+
+    document.getElementById('service121').addEventListener('click', function() {
+        window.location.href = 'https://mahadbt.maharashtra.gov.in/SchemeData/SchemeData?str=E9DDFA703C38E51ADB0E651ACBFBD0AB';
+    });
+
+    document.getElementById('vocational121').addEventListener('click', function() {
+        window.location.href = 'https://mahadbt.maharashtra.gov.in/SchemeData/SchemeData?str=E9DDFA703C38E51A6B32D7E54C4EFF76';
+    });
+
+    document.getElementById('phymat121').addEventListener('click', function() {
+        window.location.href = 'https://mahadbt.maharashtra.gov.in/SchemeData/SchemeData?str=E9DDFA703C38E51A4BBDC0D4DC8452FB';
+    });
+
+
+    document.getElementById('government910').addEventListener('click', function() {
+        window.location.href = 'https://mahadbt.maharashtra.gov.in/SchemeData/SchemeData?str=E9DDFA703C38E51A1DD7FE9893041576';
+    });
+
+    document.getElementById('prematric10').addEventListener('click', function() {
+        window.location.href = 'https://mahadbt.maharashtra.gov.in/SchemeData/SchemeData?str=E9DDFA703C38E51A1A036BC29D2FDCCA';
+    });
+    
+    document.getElementById('maharshi10').addEventListener('click', function() {
+        window.location.href = 'https://mahadbt.maharashtra.gov.in/SchemeData/SchemeData?str=E9DDFA703C38E51A921670DC48756720';
+    });
+
+
+
+
+   
