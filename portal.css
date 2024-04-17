@@ -158,15 +158,18 @@ with their default values. This means that the item can grow significantly
  border-radius: 25px;
  padding: 7%;
 }
-
+.manual{
+    font-weight: bolder;
+    text-decoration: underline;
+}
 .text::before{
  font-size: 1.3em;
  font-weight: bolder;
  font-family: "Roboto Condensed", sans-serif;
 }
-
 #shivaji::before{
 content: "Rajarshri Chhatrapati Shahu Maharaj Merit Scholarship";
+
 }
 #sbc::before{
 content: "Tuition & Examination Fees to SBC Students";
