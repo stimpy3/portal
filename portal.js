@@ -146,68 +146,70 @@ body_js=document.querySelector("body");
    
 
    //site click redirects
-   document.getElementById('shivaji12').addEventListener('click', function() {
+   document.getElementById('shivaji12').addEventListener('dblclick', function() {
     window.location.href = 'https://mahadbt.maharashtra.gov.in/SchemeData/SchemeData?str=E9DDFA703C38E51A3160277BCF2AA7C6';
     });
 
-    document.getElementById('sbc121').addEventListener('click', function() {
+    document.getElementById('sbc121').addEventListener('dblclick', function() {
         window.location.href = 'https://mahadbt.maharashtra.gov.in/SchemeData/SchemeData?str=E9DDFA703C38E51A2406A5294F822FAC';
     });
 
-    document.getElementById('senior12').addEventListener('click', function() {
+    document.getElementById('senior12').addEventListener('dblclick', function() {
         window.location.href = 'https://mahadbt.maharashtra.gov.in/SchemeData/SchemeData?str=E9DDFA703C38E51A581B0F1DB8A46333#:~:text=Maharashtrian%20Students%20studying%20Out%20of%20Maharashtra%20can%20apply%20for%20this%20scheme.&text=The%20students%20after%2012th%20are,DHE%20sanctioned%20letter.';
     });
 
-    document.getElementById('Economically12').addEventListener('click', function() {
+    document.getElementById('Economically12').addEventListener('dblclick', function() {
         window.location.href = 'https://mahadbt.maharashtra.gov.in/SchemeData/SchemeData?str=E9DDFA703C38E51AB6EDCD4985FE7C3A';
     });
 
-    document.getElementById('postmatric12').addEventListener('click', function() {
+    document.getElementById('postmatric12').addEventListener('dblclick', function() {
         window.location.href = 'https://mahadbt.maharashtra.gov.in/SchemeData/SchemeData?str=E9DDFA703C38E51AA07C7E01997E4885';
     });
 
-    document.getElementById('shivajishulkh12').addEventListener('click', function() {
+    document.getElementById('shivajishulkh12').addEventListener('dblclick', function() {
         window.location.href = 'https://mahadbt.maharashtra.gov.in/SchemeData/SchemeData?str=E9DDFA703C38E51AA54D7A32E4C3B30A';
     });
 
-    document.getElementById('junior12').addEventListener('click', function() {
+    document.getElementById('junior12').addEventListener('dblclick', function() {
         window.location.href = 'https://mahadbt.maharashtra.gov.in/SchemeData/SchemeData?str=E9DDFA703C38E51A581B0F1DB8A46333#:~:text=Maharashtrian%20Students%20studying%20Out%20of%20Maharashtra%20can%20apply%20for%20this%20scheme.&text=The%20students%20after%2012th%20are,DHE%20sanctioned%20letter.';
     });
 
-    document.getElementById('Vidyaniketan11').addEventListener('click', function() {
+    document.getElementById('Vidyaniketan11').addEventListener('dblclick', function() {
         window.location.href = 'https://mahadbt.maharashtra.gov.in/SchemeData/SchemeData?str=E9DDFA703C38E51AEC62CC61F6C26609';
     });
 
-    document.getElementById('openmerit11').addEventListener('click', function() {
+    document.getElementById('openmerit11').addEventListener('dblclick', function() {
         window.location.href = 'https://mahadbt.maharashtra.gov.in/SchemeData/SchemeData?str=E9DDFA703C38E51AAC90D4A992C45BAB';
     });
 
-    document.getElementById('service121').addEventListener('click', function() {
+    document.getElementById('service121').addEventListener('dblclick', function() {
         window.location.href = 'https://mahadbt.maharashtra.gov.in/SchemeData/SchemeData?str=E9DDFA703C38E51ADB0E651ACBFBD0AB';
     });
 
-    document.getElementById('vocational121').addEventListener('click', function() {
+    document.getElementById('vocational121').addEventListener('dblclick', function() {
         window.location.href = 'https://mahadbt.maharashtra.gov.in/SchemeData/SchemeData?str=E9DDFA703C38E51A6B32D7E54C4EFF76';
     });
 
-    document.getElementById('phymat121').addEventListener('click', function() {
+    document.getElementById('phymat121').addEventListener('dblclick', function() {
         window.location.href = 'https://mahadbt.maharashtra.gov.in/SchemeData/SchemeData?str=E9DDFA703C38E51A4BBDC0D4DC8452FB';
     });
 
 
-    document.getElementById('government910').addEventListener('click', function() {
+    document.getElementById('government910').addEventListener('dblclick', function() {
         window.location.href = 'https://mahadbt.maharashtra.gov.in/SchemeData/SchemeData?str=E9DDFA703C38E51A1DD7FE9893041576';
     });
 
-    document.getElementById('prematric10').addEventListener('click', function() {
+    document.getElementById('prematric10').addEventListener('dblclick', function() {
         window.location.href = 'https://mahadbt.maharashtra.gov.in/SchemeData/SchemeData?str=E9DDFA703C38E51A1A036BC29D2FDCCA';
     });
     
-    document.getElementById('maharshi10').addEventListener('click', function() {
+    document.getElementById('maharshi10').addEventListener('dblclick', function() {
         window.location.href = 'https://mahadbt.maharashtra.gov.in/SchemeData/SchemeData?str=E9DDFA703C38E51A921670DC48756720';
     });
 
 
 
+
+   
 
    
