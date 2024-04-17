@@ -189,14 +189,30 @@ content: "Tuition & Examination Fees to SBC Students";
 #Tution::before{
     content: "Tuition & Examination Fees to SBC Students";
 }
-
 #vidyaniketan::before{
     content:"Government Vidyaniketan Scholarship";
 }
 #openmerit::before{
     content:"Open Merit Scholarships in Junior College";
 }
-
+#service::before{
+    content:"Education Concession to the Children of Ex-Servicemen.";
+}
+#vocational::before{
+    content:"Vocational Training Fee reimbursement for the students belonging to socially and educationally backward class";
+}
+#phymat::before{
+    content:"Scholarship to Meritorious students possessing Mathematics /Physics.";
+}
+#government::before{
+    content:"Government of India Scholarship for 9th and 10th";
+}
+#prematric::before{
+    content:"Prematric Merit Scholarship for Students studying in Secondary Class";
+}
+#maharshi::before{
+    content:"Maharshi Vithhal Ramaji Shinde Tuition fees and Examination fees to Backward Class students";
+}
 
 
 .text{
